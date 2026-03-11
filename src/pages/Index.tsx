@@ -1,12 +1,19 @@
 import { Mail } from "lucide-react";
+import bgHero from "@/assets/bg-hero.jpg";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-background px-6">
-      {/* Subtle top line */}
-      <div className="line-accent absolute top-0 left-0 h-px w-full opacity-30" />
+    <div className="relative flex min-h-screen flex-col items-center justify-center bg-background px-6">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.12]"
+        style={{ backgroundImage: `url(${bgHero})` }}
+      />
 
-      <main className="flex max-w-xl flex-col items-center text-center">
+      {/* Subtle top line */}
+      <div className="line-accent absolute top-0 left-0 z-10 h-px w-full opacity-30" />
+
+      <main className="relative z-10 flex max-w-xl flex-col items-center text-center">
         {/* Company name */}
         <h1 className="text-silver-gradient text-5xl font-light tracking-[0.25em] sm:text-6xl md:text-7xl">
           MFH
@@ -20,7 +27,7 @@ const Index = () => {
 
         {/* Tagline */}
         <p className="max-w-sm text-sm font-light leading-relaxed tracking-wide text-muted-foreground">
-          Professional consulting services based in the United Kingdom.
+          Professional consulting services.
         </p>
 
         {/* Contact */}
@@ -38,14 +45,14 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="absolute bottom-6 text-center">
+      <footer className="relative z-10 mt-auto pb-6 text-center">
         <p className="text-[10px] font-light uppercase tracking-[0.3em] text-muted-foreground/40">
           © {new Date().getFullYear()} MFH Consulting Limited
         </p>
       </footer>
 
       {/* Subtle bottom line */}
-      <div className="line-accent absolute bottom-0 left-0 h-px w-full opacity-30" />
+      <div className="line-accent absolute bottom-0 left-0 z-10 h-px w-full opacity-30" />
     </div>
   );
 };
