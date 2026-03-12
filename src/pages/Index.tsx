@@ -15,10 +15,10 @@ const Index = () => {
 
       {/* Centred brand name */}
       <main className="relative z-10 flex flex-1 flex-col items-center justify-center text-center">
-        <h1 className="text-silver-gradient text-5xl font-light tracking-[0.25em] sm:text-6xl md:text-7xl">
+        <h1 className="text-silver-gradient text-7xl font-light tracking-[0.25em] sm:text-8xl md:text-9xl">
           MFH
         </h1>
-        <p className="mt-2 text-xs font-light uppercase tracking-[0.5em] text-muted-foreground sm:text-sm">
+        <p className="mt-3 text-sm font-light uppercase tracking-[0.5em] text-muted-foreground sm:text-lg md:text-xl">
           Consulting Limited
         </p>
       </main>
