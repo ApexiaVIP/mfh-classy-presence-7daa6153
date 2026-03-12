@@ -6,7 +6,7 @@ const Index = () => {
     <div className="relative flex min-h-[100dvh] flex-col items-center justify-center bg-background px-6">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.4]"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.4] animate-[fade-in_2s_ease-out]"
         style={{ backgroundImage: `url(${bgHero})` }}
       />
 
@@ -14,17 +14,17 @@ const Index = () => {
       <div className="line-accent absolute top-0 left-0 z-10 h-px w-full opacity-30" />
 
       {/* Centred brand name */}
-      <main className="relative z-10 flex flex-1 flex-col items-center justify-center text-center">
+      <main className="relative z-10 flex flex-1 flex-col items-center justify-center text-center animate-[fade-in_1.5s_ease-out]">
         <h1 className="text-silver-gradient text-7xl font-light tracking-[0.25em] sm:text-8xl md:text-9xl">
           MFH
         </h1>
-        <p className="mt-3 text-sm font-light uppercase tracking-[0.5em] text-muted-foreground sm:text-lg md:text-xl">
+        <p className="mt-3 text-sm font-light uppercase tracking-[0.5em] text-muted-foreground sm:text-lg md:text-xl animate-[fade-in_2s_ease-out_0.3s_both]">
           Consulting Limited
         </p>
       </main>
 
       {/* Lower content */}
-      <div className="relative z-10 mb-16 flex flex-col items-center text-center">
+      <div className="relative z-10 mb-16 flex flex-col items-center text-center animate-[fade-in_2s_ease-out_0.8s_both]">
         <div className="line-accent mb-10 h-px w-24 opacity-40" />
 
         <p className="max-w-sm text-sm font-light leading-relaxed tracking-wide text-muted-foreground">
@@ -45,7 +45,7 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="relative z-10 mt-auto pb-6 text-center">
+      <footer className="relative z-10 mt-auto pb-6 text-center animate-[fade-in_2s_ease-out_1.2s_both]">
         <p className="text-[10px] font-light uppercase tracking-[0.3em] text-muted-foreground/40">
           © {new Date().getFullYear()} MFH Consulting Limited
         </p>
