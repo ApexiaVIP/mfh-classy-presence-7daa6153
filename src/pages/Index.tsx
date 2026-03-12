@@ -3,7 +3,7 @@ import bgHero from "@/assets/bg-hero.jpg";
 
 const Index = () => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-background px-6">
+    <div className="relative flex min-h-[100dvh] flex-col items-center justify-center bg-background px-6">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.12]"
