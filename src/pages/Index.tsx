@@ -13,24 +13,24 @@ const Index = () => {
       {/* Subtle top line */}
       <div className="line-accent absolute top-0 left-0 z-10 h-px w-full opacity-30" />
 
-      <main className="relative z-10 flex max-w-xl flex-col items-center text-center">
-        {/* Company name */}
+      {/* Centred brand name */}
+      <main className="relative z-10 flex flex-1 flex-col items-center justify-center text-center">
         <h1 className="text-silver-gradient text-5xl font-light tracking-[0.25em] sm:text-6xl md:text-7xl">
           MFH
         </h1>
         <p className="mt-2 text-xs font-light uppercase tracking-[0.5em] text-muted-foreground sm:text-sm">
           Consulting Limited
         </p>
+      </main>
 
-        {/* Divider */}
-        <div className="line-accent my-10 h-px w-24 opacity-40" />
+      {/* Lower content */}
+      <div className="relative z-10 mb-16 flex flex-col items-center text-center">
+        <div className="line-accent mb-10 h-px w-24 opacity-40" />
 
-        {/* Tagline */}
         <p className="max-w-sm text-sm font-light leading-relaxed tracking-wide text-muted-foreground">
           Professional consulting services.
         </p>
 
-        {/* Contact */}
         <a
           href="mailto:accounts@mfhconsulting.co.uk"
           className="group mt-12 inline-flex items-center gap-2 border border-border px-6 py-3 text-xs font-light uppercase tracking-[0.3em] text-primary transition-all duration-300 hover:border-primary/50 hover:bg-secondary"
@@ -42,7 +42,7 @@ const Index = () => {
         <p className="mt-4 text-xs text-muted-foreground/60">
           accounts@mfhconsulting.co.uk
         </p>
-      </main>
+      </div>
 
       {/* Footer */}
       <footer className="relative z-10 mt-auto pb-6 text-center">
